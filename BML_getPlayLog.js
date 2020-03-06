@@ -1,0 +1,1 @@
+javascript:(function(d){d.head.appendChild(d.createElement("script")).src="https://mel225.github.io/hogeFunctions/getPlayLog.js";})(document)
