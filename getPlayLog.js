@@ -48,7 +48,7 @@ function getPlayLog(){
         location.href = xhr.responseURL;
       }
       // ログを保存する領域を作る
-      UserData.log = {};
+      UserData.log = [];
       // クラスに frame02 w400 を持つ要素（プレイ履歴の１曲分の BOX ）すべてに対して操作
       Array.from(xhr.response.getElementsByClassName("frame02 w400")).forEach(item=>{
         // プレイ時刻の乗った要素を取得
