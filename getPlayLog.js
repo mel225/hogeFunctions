@@ -36,9 +36,10 @@ function getFriendCode(){
 function getPlayLog(){
   // 非同期処理のため Promise を生成して返す
   return new Promise(resolve=>{
+    var url = "https://chunithm-net.com/mobile/record/playlog";
     // プレイ履歴ページにアクセスする
     var xhr = new XMLHttpRequest();
-    xhr.open("GET", "https://chunithm-net.com/mobile/record/playlog", true);
+    xhr.open("GET", url, true);
     xhr.responseType = "document";
     // ロード完了時にコールされる内容の設定
     xhr.onload = function(){
