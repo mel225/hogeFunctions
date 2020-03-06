@@ -4,7 +4,7 @@ if(location.href.indexOf("https://chunithm-net.com/mobile/") == -1 || location.h
   }
 }else{
   var UserData = {};
-  Promise.all(getFriendCode, getPlayLog).then(()=>{
+  Promise.all([getFriendCode(), getPlayLog()]).then(()=>{
     //sendUserData();
   });
 }
